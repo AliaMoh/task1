@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+/**
+
+ */
+public class R15 {
+    public static void main(String[] args) {
+
+        CircularLinkedList<Integer> Link1 = new CircularLinkedList<>();
+        CircularLinkedList<Integer> Link2 = new CircularLinkedList<>();
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter numbers for list 1  ");
+        for (int i = 0; i <3 ; i++) {
+            Link1.addFirst(in.nextInt());
+        }
+        System.out.println("Enter numbers for list 2  ");
+        for (int i = 0; i <3 ; i++) {
+            Link2.addFirst(in.nextInt());
+        }
+        boolean x=Link1.equals(Link2);
+        System.out.println(x);
+        //System.out.println("stop");
+    }
+}
